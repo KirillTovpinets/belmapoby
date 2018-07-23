@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav{
+    padding:5px 0px;
+    border-bottom: 1px solid #eee;
+}
+.social-links .icon{
+    display: inline-block;
+    font-size: 20px;
+    margin-right:20px;
+}
+.logo{
+    margin-right: 20px;
+}
+
+.header{
+    padding:30px 0;
+}
+h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-info.btn-inverse{
+    background-color: transparent;
+    color: #46b8da;
+}
+.btn-default.btn-inverse{
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar .search-btn{
+    margin:8px 0px;
+}
+.vcenter {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar-info{
+    background-color: #0eb1eb;
+}
+.navbar-info a{
+    color: #fff;
+}
+.navbar-info a:hover{
+    background-color: #0D71AB !important;
+}
+.slider{
+    overflow: hidden;
+}
+.slide img{
+    width: 100%;
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    padding: 20px;
+    font-size: 20px;
+    color:#fff;
+    border:none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 0;
+}
+.section{
+    padding:30px;
+}
+.tabs-panel .nav-tabs{
+    text-align: center;
+}
+.tabs-panel .nav-tabs li{
+    float:none;
+    display: inline-block;
+}
+.tabs-panel .nav-tabs li a{
+    color: #333;
+}
+.tabs-panel .nav-tabs li a:hover,
+.tabs-panel .nav-tabs li a:active{
+    background-color: transparent;
+    border:none;
+}
+.tabs-panel .nav-tabs li.active{
+    border-bottom:2px solid #333;
+}
+.tabs-panel .nav-tabs li.active a{
+    border:none;
+}
+@media only screen and (max-width: 2560px) and (min-width: 1601px){
+    .container{
+        width:1440px;
+    }
+}

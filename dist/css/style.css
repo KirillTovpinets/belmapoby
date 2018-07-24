@@ -6,13 +6,20 @@ body, html{
     padding: 0;
 }
 
+section h3{
+    text-align: center;
+    margin-top: 0;
+}
+button:active:focus{
+    outline: none;
+}
 .top-nav{
-    padding:5px 0px;
+    padding:8px 0px 5px 0px;
     border-bottom: 1px solid #eee;
 }
 .social-links .icon{
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
     margin-right:20px;
 }
 .logo{
@@ -25,6 +32,9 @@ body, html{
 h4{
     font-size: 15px;
     font-weight: bold;
+}
+hr{
+    margin-top: 10px;
 }
 .btn-info.btn-inverse{
     background-color: transparent;
@@ -41,6 +51,13 @@ h4{
 .navbar .search-btn{
     margin:8px 0px;
 }
+.navbar .search-btn:focus{
+    outline: none;
+}
+.navbar .search-btn:focus:active,
+.navbar .search-btn:hover{
+    background-color: #0d71ab;
+}
 .vcenter {
     float: none;
     display: inline-block;
@@ -52,16 +69,17 @@ h4{
 .navbar-info a{
     color: #fff;
 }
-.navbar-info a:hover{
-    background-color: #0D71AB !important;
+.navbar-info a:hover,
+.navbar-info a:focus{
+    background-color: #0d71ab !important;
 }
 .slider{
     overflow: hidden;
 }
-.slide img{
+section img{
     width: 100%;
 }
-.slick-arrow{
+.slider .slick-arrow{
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -89,11 +107,13 @@ h4{
 }
 .tabs-panel .nav-tabs li a{
     color: #333;
+    border: none;
 }
 .tabs-panel .nav-tabs li a:hover,
 .tabs-panel .nav-tabs li a:active{
     background-color: transparent;
     border:none;
+    color:#0eb1eb;
 }
 .tabs-panel .nav-tabs li.active{
     border-bottom:2px solid #333;
@@ -101,8 +121,181 @@ h4{
 .tabs-panel .nav-tabs li.active a{
     border:none;
 }
+.tab-content{
+    padding:30px 15px;
+}
+
+.tab-content .news-item img{
+    margin-right:20px;
+    border-radius: 10px;
+}
+
+.btn-block{
+    margin-top: 20px;
+}
+.tab-content .news-item .label{
+    font-size: 12px;
+}
+.tab-content .news-item p{
+    margin: 10px 0;
+}
+.advert-item{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+.advert-item:last-child{
+    margin-right: 0;
+}
+.advert-item:hover{
+    cursor: pointer;
+}
+.advert-item img {
+    width: 100%;
+}
+.advert-item .description p{
+    margin: 0;
+}
+.advert-item .description{
+    opacity: 0;
+    background-color: #0eb1eb;
+    padding:10px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    right: -100%;
+    width: 100%;
+}
+.advert-item .description small{
+    display: block;
+    text-align: right;
+}
+
+/* Study-service section */
+.study-service,
+.online-service,
+.faculties{
+    background-color: rgba(125, 125, 125, .1);
+}
+.study-service .row:first-child,
+.online-service .row:first-child{
+    margin-bottom: 20px;
+}
+section .icon{
+    float: left;
+    margin-right: 20px;
+    color:#0d71ab;
+    border: 2px solid #0d71ab;
+    border-radius: 3px;
+    padding: 6px 12px 2px;
+    font-size:30px;
+}
+.study-item h4,
+.online-service h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.study-item .description,
+.online-service .description{
+    padding-left: 78px;
+    color:#666;
+}
+/* Distant service section */
+.divider{
+    width:60px;
+    height:3px;
+    background-color: #666;
+    margin-bottom: 40px;
+}
+.thumb .description{
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.thumb .description p{
+    color: #666;
+}
+.online-container{
+    text-align: center;
+}
+.online-container .icon{
+    float: none;
+    display: inline-block;
+    background-color: #46b8da;
+    color:#fff;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 12px 3px;
+}
+.online-container .description{
+    padding: 0;
+}
+.cost-section .thumb{
+    margin-right: 30px;
+}
+#slider-controls{
+    position: relative;
+}
+.controls{
+    text-align: right;
+}
+.controls .cost-arrow{
+    background-color:rgba(0, 0, 0, 0.4);
+    border:none;
+    padding: 5px 7px 4px;
+    color: #fff;
+    border-radius: 3px;
+}
+.resource-item:not(:last-child){
+    border-right:1px solid #ddd;
+}
+.faculties .description{
+    text-align: center;
+    box-shadow: 0 0 17px -7px rgba(0,0,0,.3);
+    background-color: #fff;
+}
+.about-section{
+    padding: 0;
+}
+.about-section>.col-lg-6{
+    padding: 0;
+}
+.about{
+    background-color: #0eb1eb;
+    padding: 100px 60px 100px;
+    color: #fff;
+    text-align: center;
+}
+.about h2{
+    font-size: 34px;
+    margin-bottom: 100px;
+}
+.about .divider{
+    background-color: #fff;
+    height:2px;
+    border-radius: 3px;
+    width:40px;
+}
+.about p{
+    margin-bottom: 30px;
+}
+.about .number{
+    font-size: 36px;
+}
 @media only screen and (max-width: 2560px) and (min-width: 1601px){
     .container{
         width:1440px;
+    }
+    .col-lg-15{
+        width:20%;
+        float: left;
     }
 }

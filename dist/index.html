@@ -10,19 +10,19 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="icon-font/icons.min.css">
 </head>
 <body>
     <header>
         <div class="top-nav">
             <div class="container">
                 <div class="social-links pull-right">
-                    <a class="icon" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="icon" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="icon" href="#"><i class="fa fa-instagram"></i></a>
-                    <a class="icon" href="#"><i class="fa fa-youtube"></i></a>
+                    <a class="icon" href="#"><i class="icon-facebook"></i></a>
+                    <a class="icon" href="#"><i class="icon-twitter"></i></a>
+                    <a class="icon" href="#"><i class="icon-instagram"></i></a>
+                    <a class="icon" href="#"><i class="icon-youtube"></i></a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                     <li><a href="#">КОНТАКТЫ</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><button class="btn btn-default btn-inverse search-btn" href="#"><i class="fa fa-search"></i></a></li>
+                    <li><button class="btn btn-default btn-inverse search-btn" href="#"><i class="icon-magnifier-1"></i></a></li>
                     <li>
                         <a href="#">EN</a>                       
                     </li>
@@ -94,33 +94,436 @@
         <section class="section tabs-panel">
             <div class="container">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#news">НОВОСТИ</a></li>
-                    <li role="presentation"><a href="#advert">ОБЪЯВЛЕНИЯ</a></li>
-                    <li role="presentation"><a href="#events">МЕРОПРИЯТИЯ</a></li>
-                    <li role="presentation"><a href="#conferance">МАТЕРИАЛЫ КОНФЕРЕНЦИЙ</a></li>
+                    <li class="active"><a data-toggle="tab" href="#news">НОВОСТИ</a></li>
+                    <li><a data-toggle="tab" href="#advert">ОБЪЯВЛЕНИЯ</a></li>
+                    <li><a data-toggle="tab" href="#events">МЕРОПРИЯТИЯ</a></li>
+                    <li><a data-toggle="tab" href="#conferance">МАТЕРИАЛЫ КОНФЕРЕНЦИЙ</a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="news" class="tab-pane fade in active">
-                        <h3>HOME</h3>
-                        <p>Some content.</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
+                                </div>
+                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                    <span class="label label-info">01 март 2017</span>
+                                    <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
+                                </div>
+                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                    <span class="label label-info">01 март 2017</span>
+                                    <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
+                                </div>
+                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                    <span class="label label-info">01 март 2017</span>
+                                    <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-info btn-block">ВСЕ НОВОСТИ</a>
                     </div>
                     <div id="advert" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Some content in menu 1.</p>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Eu consequat quis ad adipisicing veniam adipisicing aute ad consequat enim aute anim culpa quis.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Quis voluptate aliquip ipsum nostrud.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Commodo do sunt excepteur esse ut enim in ea veniam labore quis irure elit reprehenderit.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Aute irure velit proident laborum laborum aliquip eu duis.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-info btn-block">ВСЕ ОБЪЯВЛЕНИЯ</a>
                     </div>
                     <div id="events" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Some content in menu 2.</p>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Eu consequat quis ad adipisicing veniam adipisicing aute ad consequat enim aute anim culpa quis.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Quis voluptate aliquip ipsum nostrud.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Commodo do sunt excepteur esse ut enim in ea veniam labore quis irure elit reprehenderit.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="advert-item">
+                                    <img src="http://placehold.it/200x200/fc3636" alt="">
+                                    <div class="overlay"></div>
+                                    <div class="description">
+                                        <p>Aute irure velit proident laborum laborum aliquip eu duis.</p>
+                                        <small>01.01.2018</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-info btn-block">ВСЕ СОБЫТИЯ</a>
                     </div>
                     <div id="conferance" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Some content in menu 2.</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
+                                </div>
+                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                    <span class="label label-info">01 март 2017</span>
+                                    <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
+                                </div>
+                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                    <span class="label label-info">01 март 2017</span>
+                                    <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
+                                </div>
+                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                    <span class="label label-info">01 март 2017</span>
+                                    <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-info btn-block">ВСЕ НОВОСТИ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-service section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
+                        <div class="icon"><i class="icon-bar-chart-board"></i></div>
+                        <h4>СТАЖИРОВКА</h4>
+                        <div class="description">
+                            <p>Eu dolor magna adipisicing ad labore nostrud exercitation sit aliquip adipisicing aliquip in ex officia. Dolor anim sint nisi esse aliquip velit pariatur dolor proident est voluptate Lorem nostrud. Deserunt consequat velit duis sunt in laboris ipsum cupidatat et nisi non deserunt reprehenderit. Officia veniam aute velit esse. Ut et voluptate tempor elit esse deserunt id culpa ipsum tempor ad. Ut pariatur nulla est sint sunt sint voluptate qui.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
+                        <div class="icon"><i class="icon-clipboard-check"></i></div>
+                        <h4>АТТЕСТАЦИЯ</h4>
+                        <div class="description">
+                            <p>Aliqua non Lorem ipsum magna officia voluptate magna dolore excepteur irure in commodo. Incididunt occaecat elit reprehenderit et exercitation qui. Cupidatat elit excepteur consequat laborum enim commodo aliquip id irure velit laborum. Duis esse sint ullamco non officia laboris duis est. Mollit ad cillum ea pariatur id consectetur pariatur eu enim anim in sunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
+                        <div class="icon"><i class="icon-bar-chart-up"></i></div>
+                        <h4>ПЕРЕПОДГОТОВКА И ПОВЫШЕНИЕ КВАЛИФИКАЦИИ</h4>
+                        <div class="description">
+                            <p>Voluptate eu sunt laboris veniam id labore proident ea tempor irure est laboris nisi proident. Est ea consectetur adipisicing dolore laborum do elit aliqua consectetur nulla reprehenderit nulla quis duis. Esse pariatur proident labore incididunt minim aliquip Lorem eu laboris ut non dolore. Proident nulla magna nostrud minim et aliquip consectetur. Nulla dolore voluptate laboris ut qui amet eu mollit irure veniam quis duis. Proident sunt excepteur ullamco deserunt duis ad exercitation anim Lorem eiusmod. Consequat reprehenderit ut proident velit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
+                        <div class="icon"><i class="icon-chemistry-1"></i></div>
+                        <h4>МАСТЕР-КЛАССЫ</h4>
+                        <div class="description">
+                            <p>Proident aliquip esse elit dolore aliquip cillum nisi pariatur. Aliquip duis dolor voluptate irure nostrud amet sit. Fugiat proident consectetur ullamco laborum ut excepteur nostrud sit ad. Quis aliqua nulla Lorem quis exercitation cillum sunt veniam dolore. Ipsum proident anim nisi consequat aliquip aliqua Lorem officia. Irure est et id occaecat elit tempor excepteur elit id nulla sunt elit dolore esse.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
+                        <div class="icon"><i class="icon-list-1"></i></div>
+                        <h4>ДИСТАНЦИОННОЕ ОБУЧЕНИЕ</h4>
+                        <div class="description">
+                            <p>Est sit excepteur sit velit labore irure deserunt ad sunt. Eiusmod esse laboris fugiat do deserunt voluptate sunt pariatur. Quis sint enim ea ullamco duis amet nulla laboris incididunt officia.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
+                        <div class="icon"><i class="icon-cloud"></i></div>
+                        <h4>ЭЛЕКТРОННЫЙ КАТАЛОГ</h4>
+                        <div class="description">
+                            <p>Sit nisi incididunt laborum ad ullamco sunt labore dolore sit. Est non nulla consectetur tempor enim in fugiat. Id minim ea aliqua magna dolore officia consequat ut ex qui non labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="section distant-services">
+            <div class="container">
+                <h3>ДИСТАНЦИОННЫЕ УСЛУГИ</h3>
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumb">
+                            <img src="http://placehold.it/200x200" alt="">
+                            <div class="description">
+                                <h4>Title</h4>
+                                <p>Sint exercitation cupidatat ad et ullamco consequat in sint exercitation fugiat qui consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumb">
+                            <img src="http://placehold.it/200x200" alt="">
+                            <div class="description">
+                                <h4>Title</h4>
+                                <p>Cupidatat amet in reprehenderit laboris quis incididunt adipisicing veniam occaecat esse non duis ullamco fugiat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumb">
+                            <img src="http://placehold.it/200x200" alt="">
+                            <div class="description">
+                                <h4>Title</h4>
+                                <p>Enim ut nisi ut minim voluptate elit enim voluptate reprehenderit voluptate nulla.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="thumb">
+                            <img src="http://placehold.it/200x200" alt="">
+                            <div class="description">
+                                <h4>Title</h4>
+                                <p>Irure nulla excepteur qui aliquip duis esse in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section online-service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="online-container">
+                            <div class="icon"><span class="icon-info"></span></div>
+                            <h4>ИНФОРМАЦИЯ МЗ РБ</h4>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="online-container">
+                            <div class="icon"><span class="icon-cross-rectangle"></span></div>
+                            <h4>ЛЕКАРСТВЕННЫЕ СРЕДСТВА РБ</h4>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="online-container">
+                            <div class="icon"><span class="icon-comments-2"></span></div>
+                            <h4>ОБРАЩЕНИЯ ГРАЖДАН</h4>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="online-container">
+                            <div class="icon"><span class="icon-credit-card"></span></div>
+                            <h4>МОНИТОРИНГ КАЧЕСТВА ОБУЧЕНИЯ</h4>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="online-container">
+                            <div class="icon"><span class="icon-heart"></span></div>
+                            <h4>ОПЛАТА УСЛУГ БЕЛМАПО</h4>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="online-container">
+                            <div class="icon"><span class="icon-comments-1"></span></div>
+                            <h4>ЗДОРОВЫЙ ОБРАЗ ЖИЗНИ</h4>
+                            <div class="description">Description</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section cost-section">
+            <div class="container">
+                <h3>ПЛАТНЫЕ УСЛУГИ</h3>
+                <hr class="divider">
+                
+                <div id="slider-controls" class="controls">
+
+                </div>
+                <hr>
+                <div id="cost-slider">
+                    <div class="thumb">
+                        <img src="http://placehold.it/100x100" alt="">
+                        <div class="description">
+                            <h4>Culpa Lorem voluptate qui do velit aliquip eu Lorem nulla adipisicing Lorem.</h4>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="http://placehold.it/100x100" alt="">
+                        <div class="description">
+                            <h4>Cupidatat duis elit tempor mollit tempor sunt deserunt ad sunt minim ex esse veniam.</h4>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="http://placehold.it/100x100" alt="">
+                        <div class="description">
+                            <h4>Ullamco ea aliquip enim tempor sint duis fugiat labore nisi cillum ullamco deserunt.</h4>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="http://placehold.it/100x100" alt="">
+                        <div class="description">
+                            <h4>Aute nisi mollit anim nostrud culpa duis duis nisi elit.</h4>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                        <img src="http://placehold.it/100x100" alt="">
+                        <div class="description">
+                            <h4>In tempor ut ea est eu sint excepteur velit tempor aute sint reprehenderit ut anim.</h4>
+                        </div>
+                    </div>
+                    <div class="thumb">
+                            <img src="http://placehold.it/100x100" alt="">
+                            <div class="description">
+                                <h4>Proident adipisicing exercitation ea aute eu sunt eiusmod mollit Lorem laborum proident.</h4>
+                            </div>
+                        </div>
+                </div>
+                <a href="#" class="btn btn-info btn-block">ВСЕ УСЛУГИ</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3>ИНФОРМАЦИОННЫЕ РЕСУРСЫ</h3>
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="section faculties">
+            <div class="container">
+                <h3>ФАКУЛЬТЕТЫ АКАДЕМИИ</h3>
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                        <img src="http://placehold.it/200x200/f00" alt="">
+                        <div class="description">
+                            <h4>Title</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                        <img src="http://placehold.it/200x200/f00" alt="">
+                        <div class="description">
+                            <h4>Title</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                        <img src="http://placehold.it/200x200/f00" alt="">
+                        <div class="description">
+                            <h4>Title</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                        <img src="http://placehold.it/200x200/f00" alt="">
+                        <div class="description">
+                            <h4>Title</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section about-section">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="academy-photo" style="background-image: url('http://placehold.it/500x500/00f'); background-size:cover; background-position: center;"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="academy-descr">
+                <div class="about">
+                    <h2>Белорусская медицинская академия последипломного образования</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <span id="stud-number" class="number">0</span>
+                            <p>ТЫСЯЧ СПЕЦИАЛИСТОВ ЕЖЕГОДНО ПРОХОДИТ  ПОДГОТОВКУ В СТЕНАХ БЕЛМАПО</p>
+                            <hr class="divider">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <span id="speciality-number" class="number">0</span>
+                            <p>ПОДГОТОВКА ОСУЩЕСТВЛЯЕТСЯ ПО 81 СПЕЦИАЛЬНОСТИ</p>
+                            <hr class="divider">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <span id="years-number" class="number">0</span>
+                            <p>ЛЕТ УСПЕШНО РЕАЛИЗУЕТ СИСТЕМУ НЕПРЕРЫВНОГО ПОВЫШЕНИЯ КВАЛИФИКАЦИИ</p>
+                            <hr class="divider">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

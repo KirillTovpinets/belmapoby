@@ -4,18 +4,42 @@
 body, html{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 section h3{
     text-align: center;
     margin-top: 0;
 }
-button:active:focus{
+button:active,
+button:focus{
     outline: none;
+}
+.scroll-top a{
+    padding:7px 10px;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    border-radius: 3px;
+    z-index: 10;
+}
+.scroll-top a{
+    text-decoration: none;
+    color:#fff;
+    transition: all .3s ease-in;
+}
+.scroll-top a:hover{
+    background-color: #0eb1eb;
 }
 .top-nav{
     padding:8px 0px 5px 0px;
     border-bottom: 1px solid #eee;
+}
+.social-links a:hover,
+.social-links a:active,
+.social-links a:focus{
+    text-decoration: none;
 }
 .social-links .icon{
     display: inline-block;
@@ -90,10 +114,10 @@ section img{
     background-color: rgba(0, 0, 0, 0.4);
 }
 .slick-prev{
-    left: 0;
+    left: -60px;
 }
 .slick-next{
-    right: 0;
+    right: -60px;
 }
 .section{
     padding:30px;
@@ -203,13 +227,20 @@ section .icon{
     margin-top: 0;
     margin-bottom: 20px;
 }
-
+.study-service .icon,
+.study-service h4,
+.study-service .description{
+    opacity: 0;
+}
 .study-item .description,
 .online-service .description{
     padding-left: 78px;
     color:#666;
 }
 /* Distant service section */
+.animated{
+    opacity: 0;
+}
 .divider{
     width:60px;
     height:3px;
@@ -250,9 +281,13 @@ section .icon{
 .controls .cost-arrow{
     background-color:rgba(0, 0, 0, 0.4);
     border:none;
-    padding: 5px 7px 4px;
+    padding: 7px 7px 4px;
     color: #fff;
+    transition: all .2s ease-in;
     border-radius: 3px;
+}
+.controls .cost-arrow:hover{
+    background-color:#0eb1eb;
 }
 .resource-item:not(:last-child){
     border-right:1px solid #ddd;
@@ -264,6 +299,7 @@ section .icon{
 }
 .about-section{
     padding: 0;
+    position: relative;
 }
 .about-section>.col-lg-6{
     padding: 0;
@@ -290,6 +326,161 @@ section .icon{
 .about .number{
     font-size: 36px;
 }
+
+.about-section .description{
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, .5);
+    color:#fff;
+    position: absolute;
+    bottom:0;
+}
+.educ-slider{
+    position: relative;
+    padding-bottom: 50px;
+}
+.educ-slider img{
+    width: initial;
+    margin: 0 auto;
+}
+.educ-slider .educ-arrow{
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(125, 125, 125, .7);
+    border: none;
+    padding:25px;
+    border-radius: 50%;
+    position: relative;
+    transition: all .2s ease-in;
+}
+.educ-slider .educ-arrow:hover{
+    background-color: #0eb1eb;
+    box-shadow: none;
+    color:#fff;
+}
+.educ-slider .educ-arrow i{
+    position: absolute;
+    top: 35%;
+    left: 34%;
+}
+.educ-slider .educ-arrow.educ-slick-next i{
+    left:37%;
+}
+.button-container{
+    position: absolute;
+}
+.educ-slider .button-container.container-right{
+    right:-70px;
+    top:0px;
+}
+.educ-slider .button-container.container-left{
+    left:-70px;
+    top:0px;
+}
+.contact-form{
+    padding: 80px;
+    background-color: #0eb1eb;
+    color:#fff;
+}
+.contact-form h4{
+    font-size: 28px;
+}
+.callback-btn{
+    text-align: right;
+}
+.callback-btn .btn{
+    padding:25px 70px 24px 22px;
+    border:none;
+    margin-top: 15px;
+    position: relative;
+}
+.callback-btn .btn:hover{
+    background-color: #fff;
+}
+.callback-btn .btn i{
+    position: absolute;
+    top:37%;
+    right: 35px;
+    font-size: 17px;
+}
+.footer-content{
+    padding: 80px 0px;
+    background-color: #0d71ab;
+    color: #fff;
+}
+.footer-content .logo{
+    margin-bottom: 20px;
+}
+.footer-content .logo img{
+    width: initial;
+    margin-right: 20px;
+}
+.footer-content .logo small,
+.footer-content .logo span{
+    display: block;
+}
+.footer-content .logo small{
+    margin-bottom: 5px;
+}
+.footer-content table tr td{
+    padding:5px 20px;
+}
+.footer-content h3{
+    margin-bottom: 50px;
+}
+.footer-content a{
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-content a:hover,
+.footer-content a:active,
+.footer-content a:focus{
+    text-decoration: none;
+    /* color:#06f998; */
+    color:#0eb1eb;
+}
+.copyright{
+    background-color: #333;
+    padding: 30px;
+    color: #c0c0c0;
+}
+.mobile-menu{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:-300px;
+    background-color: #0eb1eb;
+    width: 300px;
+    z-index: 10;
+    display: none;
+}
+.mobile-menu button{
+    width: 60px;
+    color:#fff;
+    height: 169px;
+    display: block;
+    position: absolute;
+    right: -59px;
+    z-index: 10;
+    border:none;
+    background-color: #0eb1eb;
+    line-height: 6;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+}
+.mobile-menu button:hover{
+    background-color: #0d71ab;
+}
+.mobile-title{
+    display: none;
+}
+.mobile-title small{
+    font-size: 15px;
+}
+.mobile-title h4{
+    font-size: 33px;
+    margin: 0;
+}
 @media only screen and (max-width: 2560px) and (min-width: 1601px){
     .container{
         width:1440px;
@@ -298,4 +489,67 @@ section .icon{
         width:20%;
         float: left;
     }
+}
+@media only screen and (max-width: 1600px) and (min-width: 1024px){
+    .col-md-15{
+        width:20%;
+        float: left;
+    }
+    .nav>li>a{
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    .navbar{
+        min-height:43px;
+        border-radius: 0px;
+    }
+    .navbar .search-btn{
+        margin: 3px 0px;
+    }
+}
+@media only screen and (max-width: 1023px){
+    /* .container{
+        width:870px;
+    } */
+    .col-sm-15{
+        width:20%;
+        float: left;
+    }
+    nav,
+    header .logo{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    header .title{
+        padding-left:70px;
+    }
+}
+@media only screen and (max-width: 991px){
+    /* .container{
+        width:750px;
+    } */
+    .mobile-title{
+        display: block;
+    }
+    header .title{
+        display: none;
+    }
+    .mobile-menu button{
+        height: 153px;
+    }
+    .col-sm-12,
+    .col-sm-6{
+        margin-bottom:20px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .mobile-title{
+        padding-left: 70px;
+    }
+}
+@media only screen and (max-width: 768px){
+    
 }

@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="icon-font/icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
-<body>
+<body id="top">
+    <div class="scroll-top"><a href="#top" id="to-top"><i class="icon-arrow-1-up"></i></a></div>
     <header>
         <div class="top-nav">
             <div class="container">
@@ -27,14 +30,32 @@
             </div>
         </div>
         <div class="header">
+            <div class="mobile-menu">
+                <nav>
+                    <a href="">menu 1</a>
+                    <a href="">menu 2</a>
+                    <a href="">menu 3</a>
+                    <a href="">menu 4</a>
+                    <a href="">menu 5</a>
+                </nav>
+                <button id="menu-toggler">
+                    <i class="icon-more-squares-vertical-filled"></i>
+                </button>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                         <img src="images/belmapo85.png" class="pull-left logo img-responsive" alt="" width="200" height="50">
-                        <small>Государственное учреждение образования</small>
-                        <h4 class="company-name">"БЕЛОРУССКАЯ МЕДИЦИНСКАЯ АКАДЕМИЯ ПОСЛЕДИПЛОМНОГО ОБРАЗОВАНИЯ"</h4>
+                        <div class="title">
+                            <small>Государственное учреждение образования</small>
+                            <h4 class="company-name">"БЕЛОРУССКАЯ МЕДИЦИНСКАЯ АКАДЕМИЯ ПОСЛЕДИПЛОМНОГО ОБРАЗОВАНИЯ"</h4>
+                        </div>
+                        <div class="mobile-title">
+                            <small>ГУ</small>
+                            <h4 class="company-name">"БелМАПО"</h4>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 plan">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 plan">
                         <a href="#" class="pull-right btn btn-info btn-inverse vcenter">Сводный план</a>
                     </div>
                 </div>
@@ -53,7 +74,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><span class="fa fa-home"></span></a></li>
+                    <li><a href="#"><span class="icon-home"></span></a></li>
                     <li><a href="#">ОБ АКАДЕМИИ</a></li>
                     <li><a href="#">ФАКУЛЬТЕТЫ</a></li>
                     <li><a href="#">ОБУЧЕНИЕ</a></li>
@@ -74,7 +95,7 @@
         </div>
     </nav>
     <main>
-        <section class="slider">
+        <section class="slider" id="main-slider">
             <div class="slide">
                 <img src="http://placehold.it/1500x500/FC3636" alt="">
             </div>
@@ -103,28 +124,28 @@
                     <div id="news" class="tab-pane fade in active">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
-                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                                     <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
                                 </div>
-                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                <div class="descr col-lg-7 col-md-7 col-sm-7 col-xs-7">
                                     <span class="label label-info">01 март 2017</span>
                                     <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
-                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                                     <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
                                 </div>
-                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                <div class="descr col-lg-7 col-md-7 col-sm-7 col-xs-7">
                                     <span class="label label-info">01 март 2017</span>
                                     <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 news-item">
-                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                                     <img src="http://placehold.it/150x150/a831aa" alt="" class="img-responsive pull-left">
                                 </div>
-                                <div class="descr col-lg-7 col-md-7 col-sm-7">
+                                <div class="descr col-lg-7 col-md-7 col-sm-7 col-xs-7">
                                     <span class="label label-info">01 март 2017</span>
                                     <p>Veniam veniam consectetur fugiat aliquip Lorem veniam.</p>
                                 </div>
@@ -257,50 +278,50 @@
                 </div>
             </div>
         </section>
-        <section class="study-service section">
+        <section class="study-service section" id="study-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
-                        <div class="icon"><i class="icon-bar-chart-board"></i></div>
-                        <h4>СТАЖИРОВКА</h4>
-                        <div class="description">
+                        <div class="icon animated"><i class="icon-bar-chart-board"></i></div>
+                        <h4 class="animated">СТАЖИРОВКА</h4>
+                        <div class="description animated">
                             <p>Eu dolor magna adipisicing ad labore nostrud exercitation sit aliquip adipisicing aliquip in ex officia. Dolor anim sint nisi esse aliquip velit pariatur dolor proident est voluptate Lorem nostrud. Deserunt consequat velit duis sunt in laboris ipsum cupidatat et nisi non deserunt reprehenderit. Officia veniam aute velit esse. Ut et voluptate tempor elit esse deserunt id culpa ipsum tempor ad. Ut pariatur nulla est sint sunt sint voluptate qui.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
-                        <div class="icon"><i class="icon-clipboard-check"></i></div>
-                        <h4>АТТЕСТАЦИЯ</h4>
-                        <div class="description">
+                        <div class="icon animated"><i class="icon-clipboard-check"></i></div>
+                        <h4 class="animated">АТТЕСТАЦИЯ</h4>
+                        <div class="description animated">
                             <p>Aliqua non Lorem ipsum magna officia voluptate magna dolore excepteur irure in commodo. Incididunt occaecat elit reprehenderit et exercitation qui. Cupidatat elit excepteur consequat laborum enim commodo aliquip id irure velit laborum. Duis esse sint ullamco non officia laboris duis est. Mollit ad cillum ea pariatur id consectetur pariatur eu enim anim in sunt.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
-                        <div class="icon"><i class="icon-bar-chart-up"></i></div>
-                        <h4>ПЕРЕПОДГОТОВКА И ПОВЫШЕНИЕ КВАЛИФИКАЦИИ</h4>
-                        <div class="description">
+                        <div class="icon animated"><i class="icon-bar-chart-up"></i></div>
+                        <h4 class="animated">ПЕРЕПОДГОТОВКА И ПОВЫШЕНИЕ КВАЛИФИКАЦИИ</h4>
+                        <div class="description animated">
                             <p>Voluptate eu sunt laboris veniam id labore proident ea tempor irure est laboris nisi proident. Est ea consectetur adipisicing dolore laborum do elit aliqua consectetur nulla reprehenderit nulla quis duis. Esse pariatur proident labore incididunt minim aliquip Lorem eu laboris ut non dolore. Proident nulla magna nostrud minim et aliquip consectetur. Nulla dolore voluptate laboris ut qui amet eu mollit irure veniam quis duis. Proident sunt excepteur ullamco deserunt duis ad exercitation anim Lorem eiusmod. Consequat reprehenderit ut proident velit.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
-                        <div class="icon"><i class="icon-chemistry-1"></i></div>
-                        <h4>МАСТЕР-КЛАССЫ</h4>
-                        <div class="description">
+                        <div class="icon animated"><i class="icon-chemistry-1"></i></div>
+                        <h4 class="animated">МАСТЕР-КЛАССЫ</h4>
+                        <div class="description animated">
                             <p>Proident aliquip esse elit dolore aliquip cillum nisi pariatur. Aliquip duis dolor voluptate irure nostrud amet sit. Fugiat proident consectetur ullamco laborum ut excepteur nostrud sit ad. Quis aliqua nulla Lorem quis exercitation cillum sunt veniam dolore. Ipsum proident anim nisi consequat aliquip aliqua Lorem officia. Irure est et id occaecat elit tempor excepteur elit id nulla sunt elit dolore esse.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
-                        <div class="icon"><i class="icon-list-1"></i></div>
-                        <h4>ДИСТАНЦИОННОЕ ОБУЧЕНИЕ</h4>
-                        <div class="description">
+                        <div class="icon animated"><i class="icon-list-1"></i></div>
+                        <h4 class="animated">ДИСТАНЦИОННОЕ ОБУЧЕНИЕ</h4>
+                        <div class="description animated">
                             <p>Est sit excepteur sit velit labore irure deserunt ad sunt. Eiusmod esse laboris fugiat do deserunt voluptate sunt pariatur. Quis sint enim ea ullamco duis amet nulla laboris incididunt officia.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 study-item">
-                        <div class="icon"><i class="icon-cloud"></i></div>
-                        <h4>ЭЛЕКТРОННЫЙ КАТАЛОГ</h4>
-                        <div class="description">
+                        <div class="icon animated"><i class="icon-cloud"></i></div>
+                        <h4 class="animated">ЭЛЕКТРОННЫЙ КАТАЛОГ</h4>
+                        <div class="description animated">
                             <p>Sit nisi incididunt laborum ad ullamco sunt labore dolore sit. Est non nulla consectetur tempor enim in fugiat. Id minim ea aliqua magna dolore officia consequat ut ex qui non labore.</p>
                         </div>
                     </div>
@@ -312,7 +333,7 @@
                 <h3>ДИСТАНЦИОННЫЕ УСЛУГИ</h3>
                 <hr class="divider">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animated">
                         <div class="thumb">
                             <img src="http://placehold.it/200x200" alt="">
                             <div class="description">
@@ -321,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animated">
                         <div class="thumb">
                             <img src="http://placehold.it/200x200" alt="">
                             <div class="description">
@@ -330,7 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animated">
                         <div class="thumb">
                             <img src="http://placehold.it/200x200" alt="">
                             <div class="description">
@@ -339,7 +360,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animated">
                         <div class="thumb">
                             <img src="http://placehold.it/200x200" alt="">
                             <div class="description">
@@ -354,21 +375,21 @@
         <section class="section online-service">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 animated">
                         <div class="online-container">
                             <div class="icon"><span class="icon-info"></span></div>
                             <h4>ИНФОРМАЦИЯ МЗ РБ</h4>
                             <div class="description">Description</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 animated">
                         <div class="online-container">
                             <div class="icon"><span class="icon-cross-rectangle"></span></div>
                             <h4>ЛЕКАРСТВЕННЫЕ СРЕДСТВА РБ</h4>
                             <div class="description">Description</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 animated">
                         <div class="online-container">
                             <div class="icon"><span class="icon-comments-2"></span></div>
                             <h4>ОБРАЩЕНИЯ ГРАЖДАН</h4>
@@ -377,21 +398,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 animated">
                         <div class="online-container">
                             <div class="icon"><span class="icon-credit-card"></span></div>
                             <h4>МОНИТОРИНГ КАЧЕСТВА ОБУЧЕНИЯ</h4>
                             <div class="description">Description</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 animated">
                         <div class="online-container">
                             <div class="icon"><span class="icon-heart"></span></div>
                             <h4>ОПЛАТА УСЛУГ БЕЛМАПО</h4>
                             <div class="description">Description</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 animated">
                         <div class="online-container">
                             <div class="icon"><span class="icon-comments-1"></span></div>
                             <h4>ЗДОРОВЫЙ ОБРАЗ ЖИЗНИ</h4>
@@ -456,11 +477,11 @@
                 <h3>ИНФОРМАЦИОННЫЕ РЕСУРСЫ</h3>
                 <hr class="divider">
                 <div class="row">
-                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
-                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
-                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
-                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
-                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-12 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-6 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-6 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-6 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-6 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
+                    <div class="col-lg-15 col-md-15 col-sm-6 col-xs-6 resource-item"><img src="http://placehold.it/150x100/0f0" alt=""></div>
                 </div>
             </div>
         </section>
@@ -469,25 +490,25 @@
                 <h3>ФАКУЛЬТЕТЫ АКАДЕМИИ</h3>
                 <hr class="divider">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
                         <img src="http://placehold.it/200x200/f00" alt="">
                         <div class="description">
                             <h4>Title</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
                         <img src="http://placehold.it/200x200/f00" alt="">
                         <div class="description">
                             <h4>Title</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
                         <img src="http://placehold.it/200x200/f00" alt="">
                         <div class="description">
                             <h4>Title</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 thumb">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
                         <img src="http://placehold.it/200x200/f00" alt="">
                         <div class="description">
                             <h4>Title</h4>
@@ -497,23 +518,27 @@
             </div>
         </section>
         <section class="section about-section">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="academy-photo" style="background-image: url('http://placehold.it/500x500/00f'); background-size:cover; background-position: center;"></div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="academy-descr">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="academy-photo" style="background-image: url('http://placehold.it/500x500/00f'); background-size:cover; background-position: center;">
+                <div class="description">
+                    <p>Laboris aliquip veniam amet officia laboris reprehenderit consequat ad. Enim ad cillum voluptate ipsum. Tempor in ex sunt aute nostrud. Irure tempor consectetur reprehenderit quis consectetur proident esse. Laboris cupidatat nulla minim culpa Lorem duis id cupidatat ea. Quis aliquip quis officia pariatur est Lorem ipsum voluptate. Est laborum occaecat est est.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="academy-descr">
                 <div class="about">
                     <h2>Белорусская медицинская академия последипломного образования</h2>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <span id="stud-number" class="number">0</span>
+                            <span id="stud-number" class="number" data-countto="18">0</span>
                             <p>ТЫСЯЧ СПЕЦИАЛИСТОВ ЕЖЕГОДНО ПРОХОДИТ  ПОДГОТОВКУ В СТЕНАХ БЕЛМАПО</p>
                             <hr class="divider">
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <span id="speciality-number" class="number">0</span>
+                            <span id="speciality-number" class="number" data-countto="81">0</span>
                             <p>ПОДГОТОВКА ОСУЩЕСТВЛЯЕТСЯ ПО 81 СПЕЦИАЛЬНОСТИ</p>
                             <hr class="divider">
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <span id="years-number" class="number">0</span>
+                            <span id="years-number" class="number" data-countto="85">0</span>
                             <p>ЛЕТ УСПЕШНО РЕАЛИЗУЕТ СИСТЕМУ НЕПРЕРЫВНОГО ПОВЫШЕНИЯ КВАЛИФИКАЦИИ</p>
                             <hr class="divider">
                         </div>
@@ -521,7 +546,107 @@
                 </div>
             </div>
         </section>
+        <section class="section">
+            <div class="container">
+                <h3>УЧРЕЖДЕНИЯ ВЫСШЕГО ОБРАЗОВАНИЯ</h3>
+                <hr class="divider">
+                <div id="educational-slick" class="educ-slider">
+                    <div class="est-logo"><a href="#"><img src="images/logos/1.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/2.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/3.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/4.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/5.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/6.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/7.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/8.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/9.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/10.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/11.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/12.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/13.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/14.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/15.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/16.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/17.jpg" alt="" width="50" height="50"></a></div>
+                    <div class="est-logo"><a href="#"><img src="images/logos/18.jpg" alt="" width="50" height="50"></a></div>
+                </div>    
+            </div>
+        </section>
+        <section class="section contact-form">
+            <div class="container">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <h4>Нужна консультация?</h4>
+                    <p>Подробно проконсультируем Вас по всем интересующим вопросам по повышению квалификации и переподготовки, а также вопросам дистанционного тренировочного тестирования</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 callback-btn"><button class="btn btn-default">ЗАДАТЬ ВОПРОС <i class="icon-arrow-1-right"></i></button></div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="logo">
+                            <img src="images//belmapo85white.png" alt="" width="200" height="50" class="pull-left">
+                            <small>Государственное учреждение образования</small>
+                            <span>"БЕЛОРУССКАЯ МЕДИЦИНСКАЯ АКАДЕМИЯ ПОСЛЕДИПЛОМНОГО ОБРАЗОВАНИЯ"</span>
+                        </div>
+                        <p><i class="icon-location-2"></i> Республика Беларусь 220013. г. Минск ул. П. Бровки д. 3, к. 3</p>
+                        <table>
+                            <tr>
+                                <td>Повышение квалификации и переподготовка</td>
+                                <td>+375 17 292-24-74 <br>
+                                    +375 17 290-98-13</td>
+                            </tr>
+                            <tr>
+                                <td>Аттестация, подтверждение квалификации</td>
+                                <td>+375 17 292-25-61</td>
+                            </tr>
+                            <tr>
+                                <td>Компьютерное тестирование</td>
+                                <td>+375 17 290-98-35 <br>
+                                    +375 17 290-98-34</td>
+                            </tr>
+                            <tr>
+                                <td>Поступление в аспирантуру, докторантуру и клиническую ординатуру</td>
+                                <td>+375 17 290-98-49</td>
+                            </tr>
+                            <tr>
+                                <td>Медицинские услуги</td>
+                                <td>+375 17 265-06-25 <br>
+                                    +375 17 265-46-43</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3>Быстрые ссылки</h3>
+                                <a href="#">Работа с обращениями граждан</a>
+                                <a href="#">Контактная информация</a>
+                                <a href="#">Сводный план повышения квалификации</a>
+                                <a href="#">Докторантура, аспирантура, соискательство</a>
+                                <a href="#">Клиническая ординатура</a>
+                                <a href="#">Карта сайта</a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h3>Дополнительно</h3>
+                                    <a href="#">Президент Республики Беларусь</a>
+                                    <a href="#">Министерство здравоохранения</a>
+                                    <a href="#">Министерство образования</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                ЦИТ БелМАПО © <span id="current-year"></span>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
